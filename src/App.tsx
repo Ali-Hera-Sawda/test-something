@@ -73,7 +73,12 @@ const OtherPage = () => {
     return (
         <div className='flex items-center justify-center gap-10 px-20 mt-24'>
             <div className='flex flex-col items-center justify-center'>
-                <motion.div layoutId='chevron-left'>
+                <motion.div
+                    layoutId='chevron-left'
+                    transition={{
+                        duration: 0.8,
+                    }}
+                >
                     <ChevronLeft className='size-50' />
                 </motion.div>
                 <h1 className='text-2xl font-bold mt-4'>Title</h1>
@@ -85,7 +90,12 @@ const OtherPage = () => {
             </div>
 
             <div className='flex flex-col items-center justify-center'>
-                <motion.div layoutId='chevron-up'>
+                <motion.div
+                    layoutId='chevron-up'
+                    transition={{
+                        duration: 0.8,
+                    }}
+                >
                     <ChevronUp className='size-50' />
                 </motion.div>
                 <h1 className='text-2xl font-bold mt-4'>Title</h1>
@@ -97,7 +107,12 @@ const OtherPage = () => {
             </div>
 
             <div className='flex flex-col items-center justify-center'>
-                <motion.div layoutId='chevron-down'>
+                <motion.div
+                    layoutId='chevron-down'
+                    transition={{
+                        duration: 0.8,
+                    }}
+                >
                     <ChevronDown className='size-50' />
                 </motion.div>
                 <h1 className='text-2xl font-bold mt-4'>Title</h1>
